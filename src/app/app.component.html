@@ -1,0 +1,15 @@
+<div class="flex h-screen">
+  <!-- Sidebar (largeur fixe) -->
+  <div class="w-100 bg-blue-500 text-white flex-shrink-0 ">
+    <div class="w-full bg-white border border-gray-200 ">
+      <app-sidebar></app-sidebar>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Contenu principal (flexible) -->
+  <div class="flex-1  p-4 text-white overflow-auto">
+      <app-navbar></app-navbar>
+    <router-outlet />
+  </div>
+</div>
